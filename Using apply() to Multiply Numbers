@@ -1,0 +1,10 @@
+function multiplyNumbers(a, b) {
+  function multiply() {
+    return this * arguments[0];
+  }
+  return multiply.apply(a, [b]);
+}
+
+
+console.log(multiplyNumbers(5, 3));  
+console.log(multiplyNumbers(10, 4)); 
